@@ -1,299 +1,163 @@
-<!DOCTYPE html>
-<html lang="pt-MZ">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículo — Noé Samuel Vilanculos</title>
-  <meta name="description" content="Formação académica, experiência profissional e competências técnicas de Noé Samuel Vilanculos." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/responsivo.css" />
-</head>
-
-  <body>
-
-  <header class="cabecalho">
-    <div class="cabecalho__interior">
-      <a href="index.html" class="logotipo">Noé <span>Vilanculos</span></a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
-        <span></span><span></span><span></span>
-      </label>
-
-      <nav class="nav-principal" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active" aria-current="page">Currículo</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-    <main id="conteudo">
-
-      <section class="seccao envolvente seccao--compacta">
-        <header class="seccao__cabecalho">
-          <span class="etiqueta">currículo</span>
-          <h1>Formação, experiência e competências</h1>
-        <p>
-          Estudante do 2.º ano da Licenciatura em Informática na Faculdade de Ciências e Tecnologia da
-          Universidade Licungo, Beira. O percurso combina programação, sistemas e design gráfico.
-        </p>
-        <a href="assets/ficheiros/CV-Noe-Vilanculos.pdf" class="botao botao--fantasma" download style="margin-top: var(--esp-2);">Download CV (PDF)</a>
-      </header>
-    </section>
-
-      <section class="seccao envolvente seccao--compacta" aria-labelledby="sobre-titulo">
-      <h2 id="sobre-titulo">Sobre mim</h2>
-      <div class="duas-colunas" style="margin-top: var(--esp-2);">
-        <p style="max-width: 60ch;">
-          Sou estudante de Informática e designer gráfico, interessado em transformar ideias em
-          produtos digitais funcionais e visualmente consistentes. A minha formação combina
-          programação, sistemas computacionais e comunicação visual, o que me permite trabalhar
-          tanto na lógica de uma solução quanto na forma como ela chega ao utilizador. Fora do
-          código, mantenho-me próximo de <a href="hobbies.html">design, cultura moçambicana e
-          programação criativa</a> — interesses que continuam a moldar a minha forma de pensar produto.
-        </p>
-        <dl>
-          <div>
-            <dt style="font-family: var(--fonte-mono); font-size: var(--tam-xs); color: var(--cor-teal);">Atualmente</dt>
-            <dd style="color: var(--cor-texto-suave); margin-bottom: var(--esp-2);">2.º ano de Licenciatura em Informática</dd>
-          </div>
-          <div>
-            <dt style="font-family: var(--fonte-mono); font-size: var(--tam-xs); color: var(--cor-teal);">Interesses</dt>
-            <dd style="color: var(--cor-texto-suave);">Software · Produto Digital · UI/UX · Design · Tecnologia</dd>
-          </div>
-        </dl>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Currículo de Noé Samuel Vilanculos." />
+    <title>Currículo | Noé Vilanculos</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">NV</span> Noé Vilanculos</a
+        >
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html">Início</a
+          ><a class="active" href="about.html">Currículo</a
+          ><a href="portfolio.html">Projetos</a
+          ><a href="hobbies.html">Interesses</a
+          ><a href="contact.html">Contacto</a>
+        </nav>
       </div>
-    </section>
-
-    <section class="seccao envolvente seccao--compacta" aria-labelledby="formacao-titulo">
-      <h2 id="formacao-titulo">Formação académica</h2>
-
-      <ol class="linha-tempo" style="margin-top: var(--esp-3);">
-        <li>
-          <h4>Licenciatura em Informática</h4>
-          <span class="periodo">2025 — atual · 2.º ano</span>
-          <p>Faculdade de Ciências e Tecnologia, Universidade Licungo — Dondo/Beira, Moçambique.
-            Foco em programação, sistemas computacionais, algoritmos, desenvolvimento de software e
-            matemática aplicada à computação.</p>
-        </li>
-        <li>
-          <h4>Informática Básica</h4>
-          <span class="periodo">2019</span>
-          <p>Associação Mubango — formação introdutória em informática.</p>
-        </li>
-      </ol>
-
-      <div class="duas-colunas" style="margin-top: var(--esp-4); align-items: end;">
-        <div>
-          <h3>Produção académica</h3>
-          <ul>
-            <li><strong>Lógica Formal</strong> — trabalho de grupo em Matemática Discreta.</li>
-            <li><strong>Sistemas de Ficheiros</strong> — apresentação académica.</li>
-            <li><strong>Máquinas Virtuais vs. Containers</strong> — trabalho de Sistemas Operativos sobre virtualização.</li>
-            <li><strong>O Conceito Antropológico de Cultura</strong> — trabalho de Antropologia Cultural de Moçambique.</li>
-          </ul>
-        </div>
-        <figure class="painel">
-          <img src="assets/img/cert-mubango.svg" alt="Certificado de Informática Básica emitido pela Associação Mubango a Noé Samuel Vilanculos, 2019" width="640" height="452" />
-          <figcaption>Certificado — Informática Básica, Associação Mubango (2019)</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="seccao envolvente seccao--compacta" aria-labelledby="experiencia-titulo">
-      <h2 id="experiencia-titulo">Experiência profissional</h2>
-
-      <ol class="linha-tempo" style="margin-top: var(--esp-3);">
-        <li>
-          <h4>Designer Gráfico — Nova Print</h4>
-          <span class="periodo">2022 — 2026</span>
-          <p>Atuação contínua em design gráfico, identidade visual, produção publicitária e
-            preparação de artes para impressão, com evolução progressiva para maior
-            responsabilidade em projetos de comunicação visual e documentação empresarial para
-            clientes institucionais e comerciais.</p>
-        </li>
-        <li>
-          <h4>Formador de Informática Básica — AJODP</h4>
-          <span class="periodo">2021</span>
-          <p>Formação de jovens em fundamentos de informática, orientação de utilizadores e
-            acompanhamento dos formandos.</p>
-        </li>
-        <li>
-          <h4>Operador de Máquinas — NEWSTART</h4>
-          <span class="periodo">2019 — 2020</span>
-          <p>Ambiente técnico e operacional; desenvolvimento de responsabilidade, disciplina e
-            cumprimento de procedimentos.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="seccao envolvente seccao--compacta" aria-labelledby="prolink-titulo">
-      <h2 id="prolink-titulo">Projeto em destaque</h2>
-      <div class="duas-colunas" style="margin-top: var(--esp-2); align-items: center;">
-        <figure class="painel">
-          <img src="assets/img/proj-prolink.svg" alt="Captura ilustrativa da plataforma ProLink, ecossistema EdTech e HRTech" width="640" height="400" loading="lazy" />
-          <figcaption>ProLink — plataforma EdTech &amp; HRTech para Moçambique</figcaption>
-        </figure>
-        <div>
-          <span class="cartao-projeto__estado">Em desenvolvimento · Product Owner</span>
-          <p style="margin-top: var(--esp-2); max-width: 60ch;">
-            O ProLink é o projeto de maior dimensão do meu portfólio: um ecossistema digital que
-            acompanha o jovem moçambicano desde a orientação vocacional até à formação, emprego e
-            empreendedorismo, com a Universidade Licungo como parceira-piloto. Sou autor e Product
-            Owner, responsável pelo PRD v1.3, requisitos, personas e roadmap de 5 fases.
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Currículo</p>
+          <h1>Aprender, criar, evoluir.</h1>
+          <p class="hero-copy intro-copy">
+            Estudante do 2.º ano da Licenciatura em Informática na Universidade
+            Licungo, combinando desenvolvimento de software, design gráfico e
+            documentação de projetos.
           </p>
-          <ul class="tags" style="margin-top: var(--esp-2);">
-            <li>Node.js/Express</li><li>React Native</li><li>PostgreSQL</li>
-          </ul>
-          <p style="margin-top: var(--esp-2);">
-            <a href="portfolio.html">Ver case study completo no Portfólio →</a>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="assets/ficheiros/CV-Noe-Vilanculos.pdf"
+              download
+              >Descarregar CV (PDF)</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section dark">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Formação</p>
+            <h2>Base técnica, curiosidade constante.</h2>
+            <div class="timeline">
+              <article>
+                <time>ATUAL</time>
+                <h3>Licenciatura em Informática</h3>
+                <p>
+                  Faculdade de Ciências e Tecnologia · Universidade Licungo ·
+                  Dondo/Beira.
+                </p>
+              </article>
+              <article>
+                <time>2019</time>
+                <h3>Informática Básica</h3>
+                <p>Associação Mubango.</p>
+              </article>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">Experiência</p>
+            <h2>Design que comunica.</h2>
+            <div class="timeline">
+              <article>
+                <time>2025–2026</time>
+                <h3>Designer Gráfico · Nova Print</h3>
+                <p>
+                  Identidade visual, materiais institucionais, layouts e
+                  preparação para impressão.
+                </p>
+              </article>
+              <article>
+                <time>2021</time>
+                <h3>Formador de Informática · AJODP</h3>
+                <p>
+                  Formação de jovens e apoio no uso de ferramentas digitais.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section-head">
+            <div>
+              <p class="eyebrow">Competências</p>
+              <h2>Ferramentas e fundamentos.</h2>
+            </div>
+          </header>
+          <table class="skill-table">
+            <thead>
+              <tr>
+                <th scope="col">Área</th>
+                <th scope="col">Tecnologias</th>
+                <th scope="col">Foco</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Programação</td>
+                <td>C · C++ · Java · JavaScript · Python</td>
+                <td class="level">●●●○○</td>
+              </tr>
+              <tr>
+                <td>Web</td>
+                <td>HTML · CSS · JavaScript</td>
+                <td class="level">●●●○○</td>
+              </tr>
+              <tr>
+                <td>Desktop</td>
+                <td>Java · JavaFX · Maven</td>
+                <td class="level">●●●○○</td>
+              </tr>
+              <tr>
+                <td>Design</td>
+                <td>Photoshop · Illustrator · InDesign</td>
+                <td class="level">●●●●○</td>
+              </tr>
+              <tr>
+                <td>Infraestrutura</td>
+                <td>Git · Docker · VirtualBox</td>
+                <td class="level">●●○○○</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">NV</span> Noé Vilanculos</a
+          >
+          <p>Desenvolvido por Noé Samuel Vilanculos.</p>
+        </div>
+        <div>
+          <p>
+            <a href="mailto:noevilanculos100@gmail.com"
+              >noevilanculos100@gmail.com</a
+            >
+            · 847 220 016
+          </p>
+          <p>
+            <a href="https://github.com/noevilanculos-code">GitHub</a> ·
+            <a
+              href="https://linkedin.com/in/no%C3%A9-samuel-vilanculos-046a79372"
+              >LinkedIn</a
+            >
           </p>
         </div>
       </div>
-    </section>
-
-    <section class="seccao envolvente" aria-labelledby="competencias-titulo">
-      <h2 id="competencias-titulo">Competências técnicas</h2>
-      <p style="margin-bottom: var(--esp-3);">
-        Nível de proficiência autoavaliado, com colunas agrupadas por área de aplicação
-        (tabela com <code>colspan</code> no cabeçalho de grupo).
-      </p>
-
-      <div class="tabela-wrap">
-        <table>
-          <caption>Horário de competências técnicas por área</caption>
-          <thead>
-            <tr>
-              <th scope="col" rowspan="2">Tecnologia</th>
-              <th scope="col" colspan="2">Aplicação</th>
-              <th scope="col" rowspan="2">Proficiência</th>
-            </tr>
-            <tr>
-              <th scope="col">Contexto</th>
-              <th scope="col">Ferramentas associadas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Java / JavaFX</th>
-              <td>Aplicações desktop, sistemas com RBAC</td>
-              <td>NetBeans, Maven</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: avançado, 80%"><span style="width:80%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">C / C++</th>
-              <td>Estruturas de dados, algoritmos, persistência</td>
-              <td>Dev-C++, VS Code</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: avançado, 78%"><span style="width:78%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">JavaScript</th>
-              <td>Interatividade web, projetos pessoais</td>
-              <td>VS Code</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: intermédio, 60%"><span style="width:60%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">Python</th>
-              <td>Resolução de problemas, scripts</td>
-              <td>VS Code</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: intermédio, 55%"><span style="width:55%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">HTML5 / CSS3</th>
-              <td>Sites e páginas institucionais</td>
-              <td>VS Code, Git</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: intermédio-avançado, 70%"><span style="width:70%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">Docker / VirtualBox</th>
-              <td>Sistemas e infraestrutura, máquinas virtuais</td>
-              <td>Docker, VirtualBox</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: básico-intermédio, 45%"><span style="width:45%"></span></span></td>
-            </tr>
-            <tr>
-              <th scope="row">Photoshop / Illustrator</th>
-              <td>Identidade visual, design publicitário</td>
-              <td>Adobe CC</td>
-              <td><span class="nivel" role="img" aria-label="Proficiência: avançado, 85%"><span style="width:85%"></span></span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="grelha-destaques" style="margin-top: var(--esp-4);">
-        <div>
-          <h3>Desenvolvimento</h3>
-          <ul class="tags">
-            <li>Java</li><li>C++</li><li>JavaScript</li><li>Python</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Web</h3>
-          <ul class="tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Design responsivo</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Software &amp; ferramentas</h3>
-          <ul class="tags">
-            <li>JavaFX</li><li>Maven</li><li>Git</li><li>Docker</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Arquitetura &amp; conceitos</h3>
-          <ul class="tags">
-            <li>POO</li><li>RBAC</li><li>Estruturas de dados</li><li>Algoritmos</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Design</h3>
-          <ul class="tags">
-            <li>Photoshop</li><li>Illustrator</li><li>Branding</li><li>UI Design</li>
-          </ul>
-        </div>
-      </div>
-
-      <details style="margin-top: var(--esp-3);">
-        <summary style="cursor: pointer; color: var(--cor-teal); font-family: var(--fonte-mono); font-size: var(--tam-sm);">Ver detalhe técnico completo</summary>
-        <div class="duas-colunas" style="margin-top: var(--esp-3);">
-          <div>
-            <h4>Desenvolvimento de software</h4>
-            <ul class="tags">
-              <li>Recursividade</li><li>Manipulação de ficheiros</li><li>Persistência de dados</li>
-              <li>Modelação de sistemas</li><li>Arquitetura modular</li><li>Autenticação</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Algoritmos aplicados</h4>
-            <ul class="tags">
-              <li>Compressão de Huffman</li><li>Gale-Shapley</li><li>Distância de Levenshtein</li>
-              <li>Persistência em ficheiros</li><li>Organização de informação</li>
-            </ul>
-          </div>
-        </div>
-      </details>
-    </section>
-
-  </main>
-
-  <footer class="rodape">
-    <div class="rodape__interior">
-      <ul class="rodape__contactos">
-        <li><a href="mailto:noevilanculos100@gmail.com">noevilanculos100@gmail.com</a></li>
-        <li><a href="tel:+258847220016">847 220 016</a></li>
-        <li><a href="https://github.com/noevilanculos-code" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/noé-samuel-vilanculos-046a79372" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-      <p class="rodape__assinatura">Desenvolvido por Noé Samuel Vilanculos</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
