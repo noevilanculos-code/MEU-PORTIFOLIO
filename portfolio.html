@@ -1,177 +1,281 @@
-<!DOCTYPE html>
-<html lang="pt-MZ">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio — Noé Samuel Vilanculos</title>
-  <meta name="description" content="Projetos de desenvolvimento de software e design de Noé Samuel Vilanculos: SmartCity, ProLink, sistemas de gestão escolar e mais." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/responsivo.css" />
-</head>
-<body>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projetos de Noé Samuel Vilanculos." />
+    <title>Projetos | Noé Vilanculos</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/melhorias.css" />
+  </head>
 
-  <header class="cabecalho">
-    <div class="cabecalho__interior">
-      <a href="index.html" class="logotipo">Noé <span>Vilanculos</span></a>
+  <body id="top">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">NV</span> Noé Vilanculos
+        </a>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
-        <span></span><span></span><span></span>
-      </label>
-
-      <nav class="nav-principal" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Currículo</a></li>
-          <li><a href="portfolio.html" class="active" aria-current="page">Portfólio</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="conteudo">
-
-    <section class="seccao envolvente seccao--compacta">
-      <header class="seccao__cabecalho">
-        <span class="etiqueta">portfólio</span>
-        <h1>Projetos em destaque</h1>
-        <p>
-          Uma seleção de projetos académicos e pessoais, entre sistemas desktop, plataformas web e
-          trabalhos de design gráfico aplicado.
-        </p>
-      </header>
-    </section>
-
-    <section class="seccao envolvente">
-
-      <div class="grelha-projetos">
-
-        <article class="painel cartao-projeto cartao-projeto--case">
-          <span class="cartao-projeto__estado">Projeto académico</span>
-          <figure>
-            <img src="assets/img/proj-smartcity.svg" alt="Captura ilustrativa do sistema SmartCity, aplicação desktop de gestão municipal" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>SmartCity</h3>
-          <dl class="case-study">
-            <div><dt>Problema</dt><dd>Gerir operações municipais distintas — cidadãos, funcionários e frota — numa única aplicação coerente.</dd></div>
-            <div><dt>Solução</dt><dd>Aplicação desktop em JavaFX com arquitetura modular (13 módulos) e controlo de acesso por perfis (RBAC).</dd></div>
-            <div><dt>Funcionalidades</dt><dd>Autenticação, gestão de utilizadores, triagem assistida por IA (simulada) e simulação de frota com GPS.</dd></div>
-            <div><dt>Meu papel</dt><dd>Desenvolvimento, arquitetura e interface, do zero.</dd></div>
-          </dl>
-          <ul class="tags">
-            <li>JavaFX</li><li>Maven</li><li>RBAC</li><li>GPS</li>
-          </ul>
-          <div class="cartao-projeto__meta">
-            <a href="https://github.com/noevilanculos-code/smartcity" target="_blank" rel="noopener">Ver repositório →</a>
-          </div>
-        </article>
-
-        <article class="painel cartao-projeto cartao-projeto--case">
-          <span class="cartao-projeto__estado">Em desenvolvimento · Product Owner</span>
-          <figure>
-            <img src="assets/img/proj-prolink.svg" alt="Captura ilustrativa da plataforma ProLink, ecossistema EdTech e HRTech" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>ProLink</h3>
-          <dl class="case-study">
-            <div><dt>Problema</dt><dd>Fragmentação entre orientação vocacional, formação, oportunidades e empreendedorismo para o jovem moçambicano.</dd></div>
-            <div><dt>Solução</dt><dd>Ecossistema digital único — do "o que estudar" ao "onde trabalhar ou empreender" — com a Universidade Licungo como parceira-piloto.</dd></div>
-            <div><dt>Funcionalidades</dt><dd>Teste vocacional, portefólio/CV vivo, catálogo de cursos e vagas, gamificação e modos de baixo consumo de dados.</dd></div>
-            <div><dt>Meu papel</dt><dd>Autor e Product Owner — PRD v1.3, requisitos, personas e roadmap de 5 fases.</dd></div>
-          </dl>
-          <ul class="tags">
-            <li>Node.js/Express</li><li>React Native</li><li>PostgreSQL</li>
-          </ul>
-          <div class="cartao-projeto__meta">
-            <a href="https://github.com/noevilanculos-code/prolink" target="_blank" rel="noopener">Ver repositório →</a>
-          </div>
-        </article>
-
-        <article class="painel cartao-projeto">
-          <span class="cartao-projeto__estado">Projeto académico · C++17</span>
-          <figure>
-            <img src="assets/img/proj-escolar-cpp.svg" alt="Captura ilustrativa do sistema de gestão escolar em C++17" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>Sistema de Gestão Escolar (C++)</h3>
-          <p>Sistema académico com 18 tipos de entidades e 7 papéis com permissões distintas (RBAC).
-            Persistência em ficheiros TSV, compressão de Huffman, algoritmo de Gale-Shapley e
-            correção ortográfica por distância de Levenshtein.</p>
-          <ul class="tags">
-            <li>C++17</li><li>RBAC</li><li>Huffman</li><li>Gale-Shapley</li>
-          </ul>
-          <p class="cartao-projeto__papel"><strong>Meu papel:</strong> desenvolvimento individual, do modelo de dados aos algoritmos.</p>
-          <div class="cartao-projeto__meta">
-            <a href="https://github.com/noevilanculos-code/sistema-escolar-cpp" target="_blank" rel="noopener">Ver repositório →</a>
-          </div>
-        </article>
-
-        <article class="painel cartao-projeto">
-          <span class="cartao-projeto__estado">Projeto académico · Java</span>
-          <figure>
-            <img src="assets/img/proj-escolar-java.svg" alt="Captura ilustrativa do sistema de gestão escolar desenvolvido em Java" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>Sistema de Gestão Escolar (Java)</h3>
-          <p>Aplicação Java orientada a objetos com 19 ficheiros-fonte, gestão de informação académica
-            e aplicação da escala de avaliação usada no contexto moçambicano. Geração de JAR executável.</p>
-          <ul class="tags">
-            <li>Java</li><li>POO</li><li>JAR</li>
-          </ul>
-          <p class="cartao-projeto__papel"><strong>Meu papel:</strong> desenvolvimento individual e organização do código em módulos.</p>
-          <div class="cartao-projeto__meta">
-            <a href="https://github.com/noevilanculos-code/sistema-escolar-java" target="_blank" rel="noopener">Ver repositório →</a>
-          </div>
-        </article>
-
-        <article class="painel cartao-projeto">
-          <span class="cartao-projeto__estado">Design gráfico</span>
-          <figure>
-            <img src="assets/img/proj-novaprint.svg" alt="Captura ilustrativa de materiais gráficos desenvolvidos para a Nova Print" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>Nova Print</h3>
-          <p>Modelos profissionais e padronizados para uso empresarial: cotações, faturas, recibos,
-            VD e identidade visual, combinando design gráfico e organização documental.</p>
-          <ul class="tags">
-            <li>Identidade visual</li><li>Branding</li><li>Documentos comerciais</li>
-          </ul>
-          <p class="cartao-projeto__papel"><strong>Meu papel:</strong> design gráfico e produção de todas as peças, do conceito à arte final.</p>
-        </article>
-
-        <article class="painel cartao-projeto">
-          <span class="cartao-projeto__estado">Web</span>
-          <figure>
-            <img src="assets/img/proj-convite.svg" alt="Captura ilustrativa do convite web para lançamento de livro" width="640" height="400" loading="lazy" />
-          </figure>
-          <h3>Convite Web — Lançamento de Livro</h3>
-          <p>Projeto de comunicação digital que combina desenvolvimento web e design visual, com foco
-            numa experiência temática e responsiva.</p>
-          <ul class="tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
-          </ul>
-          <p class="cartao-projeto__papel"><strong>Meu papel:</strong> desenvolvimento e design da experiência, ponta a ponta.</p>
-          <div class="cartao-projeto__meta">
-            <a href="https://github.com/noevilanculos-code/convite-lancamento-livro" target="_blank" rel="noopener">Ver repositório →</a>
-          </div>
-        </article>
-
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html">Início</a>
+          <a href="about.html">Currículo</a>
+          <a class="active" href="portfolio.html">Projetos</a
+          ><a href="hobbies.html">Interesses</a
+          ><a href="contact.html">Contacto</a>
+        </nav>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="rodape">
-    <div class="rodape__interior">
-      <ul class="rodape__contactos">
-        <li><a href="mailto:noevilanculos100@gmail.com">noevilanculos100@gmail.com</a></li>
-        <li><a href="tel:+258847220016">847 220 016</a></li>
-        <li><a href="https://github.com/noevilanculos-code" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/noé-samuel-vilanculos-046a79372" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-      <p class="rodape__assinatura">Desenvolvido por Noé Samuel Vilanculos</p>
-    </div>
-  </footer>
-
-</body>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Portfólio selecionado</p>
+          <h1>Projetos que <span class="accent">respondem.</span></h1>
+          <p class="hero-copy intro-copy">
+            Explorações académicas, profissionais e pessoais onde tecnologia,
+            produto e comunicação visual trabalham juntos.
+          </p>
+        </div>
+      </section>
+      <section class="section dark">
+        <div class="container">
+          <div class="project-grid">
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/smartcity.png"
+                  width="1365"
+                  height="720"
+                  alt="Ecrã de boas-vindas da aplicação desktop SmartCity"
+                />
+                <figcaption>
+                  SmartCity · Aplicação desktop para a Beira
+                </figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">01 / JAVA FX</p>
+                  <span class="status">ACADÉMICO</span>
+                </div>
+                <h3>SmartCity</h3>
+                <p>
+                  Sistema municipal modular concebido para melhorar a
+                  organização e prestação de serviços ao cidadão.
+                </p>
+                <ul class="project-features">
+                  <li>13 módulos e perfis ADMIN, FUNCIONÁRIO e CIDADÃO</li>
+                  <li>RBAC, simulação de IA e frota com GPS</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">JavaFX</span><span class="tag">Maven</span
+                  ><span class="tag">RBAC</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/prolink.png"
+                  width="1365"
+                  height="554"
+                  alt="Painel escuro da plataforma ProLink"
+                />
+                <figcaption>ProLink · Plataforma EdTech & HRTech</figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">02 / PRODUTO</p>
+                  <span class="status building">EM DESENVOLVIMENTO</span>
+                </div>
+                <h3>ProLink</h3>
+                <p>
+                  Ecossistema que acompanha jovens desde a orientação vocacional
+                  até à empregabilidade e empreendedorismo.
+                </p>
+                <ul class="project-features">
+                  <li>
+                    Produto pensado para baixo consumo de dados e acessibilidade
+                  </li>
+                  <li>PRD v1.3, roadmap e MVP com a Universidade Licungo</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">EdTech</span><span class="tag">HRTech</span
+                  ><span class="tag">Product</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/school-system.svg"
+                  width="800"
+                  height="450"
+                  alt="Ilustração da interface do sistema de gestão escolar em C++"
+                />
+                <figcaption>Sistema de Gestão Escolar · C++17</figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">03 / ALGORITMOS</p>
+                  <span class="status">ACADÉMICO</span>
+                </div>
+                <h3>Gestão Escolar em C++</h3>
+                <p>
+                  Sistema académico orientado a regras, dados persistentes e
+                  diferentes responsabilidades de utilizador.
+                </p>
+                <ul class="project-features">
+                  <li>18 entidades e 7 papéis com controlo de acesso</li>
+                  <li>Huffman, Gale-Shapley e distância de Levenshtein</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">C++17</span><span class="tag">TSV</span
+                  ><span class="tag">Algoritmos</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/java-school.svg"
+                  width="800"
+                  height="450"
+                  alt="Ilustração de uma aplicação de sistema académico em Java"
+                />
+                <figcaption>
+                  Sistema de Gestão Escolar · Aplicação Java
+                </figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">04 / DESKTOP</p>
+                  <span class="status">ACADÉMICO</span>
+                </div>
+                <h3>Gestão Escolar em Java</h3>
+                <p>
+                  Aplicação para gerir informação académica e aplicar a escala
+                  de avaliação utilizada no contexto moçambicano.
+                </p>
+                <ul class="project-features">
+                  <li>19 ficheiros-fonte e estrutura orientada a objetos</li>
+                  <li>Geração de JAR executável</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">Java</span><span class="tag">OOP</span
+                  ><span class="tag">JAR</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/nova-print.jpg"
+                  width="1600"
+                  height="1600"
+                  alt="Identidade visual Nova Print com logótipo colorido"
+                />
+                <figcaption>
+                  Nova Print · Design, gráfica e reprografia
+                </figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">05 / DESIGN</p>
+                  <span class="status">PROFISSIONAL</span>
+                </div>
+                <h3>Nova Print</h3>
+                <p>
+                  Modelos profissionais e padronizados para utilização
+                  empresarial, unindo design, documentação e automação.
+                </p>
+                <ul class="project-features">
+                  <li>Cotações, faturas, recibos e documentos comerciais</li>
+                  <li>
+                    Identidade visual e preparação de artes para impressão
+                  </li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">Branding</span><span class="tag">Print</span
+                  ><span class="tag">Layout</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <figure>
+                <img
+                  src="assets/img/invite-web.svg"
+                  width="800"
+                  height="450"
+                  alt="Ilustração de um convite digital para lançamento de livro"
+                />
+                <figcaption>Convite Web · Lançamento de livro</figcaption>
+              </figure>
+              <div>
+                <div class="project-meta">
+                  <p class="number">06 / WEB</p>
+                  <span class="status">PESSOAL</span>
+                </div>
+                <h3>Convite Web</h3>
+                <p>
+                  Experiência digital temática para comunicação de um lançamento
+                  de livro, com atenção a responsividade e atmosfera visual.
+                </p>
+                <ul class="project-features">
+                  <li>Composição visual adaptada a diferentes ecrãs</li>
+                  <li>Comunicação clara de evento e identidade temática</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container media-block">
+          <div>
+            <p class="eyebrow">Multimédia</p>
+            <h2>Apresentação em Video </h2>
+            <p class="notice">
+              Este é apenas uma breve demostracao em video <code>assets/video/</code> quando estiver disponível.
+            </p>
+          </div>
+          <video controls poster="assets/img/noe-vilanculos.png">
+            <source
+              src="assets/video/apresentacao-noe.mp4"
+              type="video/mp4"
+            />
+            O seu navegador não suporta vídeo HTML5.
+          </video>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">NV</span> Noé Vilanculos</a
+          >
+          <p>Desenvolvido por Noé Samuel Vilanculos.</p>
+        </div>
+        <div>
+          <p>
+            <a href="mailto:noevilanculos100@gmail.com"
+              >noevilanculos100@gmail.com</a
+            >
+            · 847 220 016
+          </p>
+          <p>
+            <a href="https://github.com/noevilanculos-code">GitHub</a> ·
+            <a
+              href="https://linkedin.com/in/no%C3%A9-samuel-vilanculos-046a79372"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
