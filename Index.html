@@ -1,142 +1,134 @@
-<!DOCTYPE html>
-<html lang="pt-MZ">
-  <<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noé Samuel Vilanculos — Estudante de Informática &amp; Designer Gráfico </title>
-    <meta name="description" content="Portfólio de Noé Samuel Vilanculos, estudante de Informática na Universidade Licungo (Beira, Moçambique), com experiência em desenvolvimento de software e design gráfico." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio de Noé Samuel Vilanculos, estudante de Informática e designer gráfico."
+    />
+    <title>Noé Samuel Vilanculos | Portfólio</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
-    
-<header class="cabecalho">
-    <div class="cabecalho__interior">
-      <a href="index.html" class="logotipo">Noé <span>Vilanculos</span></a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
-        <span></span><span></span><span></span>
-      </label>
-      <nav class="nav-principal" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="about.html">Currículo</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-<main id="conteudo">
-
-    <section class="hero">
-      <div class="envolvente">
-        <div class="hero__conteudo">
-          <span class="hero__eyebrow">Noé Samuel Vilanculos · Beira, Moçambique</span>
-          <h1>Desenvolvedor de Software <em>&amp; Designer Gráfico</em></h1>
-          <p class="hero__tagline">
-            Desenvolvo sistemas e experiências digitais combinando Java, C++, JavaScript e design
-            gráfico para criar soluções funcionais, organizadas e visualmente consistentes.
-          </p>
-          <div class="hero__acoes">
-            <a href="portfolio.html" class="botao">Ver projetos</a>
-            <a href="contact.html" class="botao botao--fantasma">Contactar-me</a>
-            <a href="assets/ficheiros/CV-Noe-Vilanculos.pdf" class="botao botao--fantasma" download>Download CV</a>
+  <body id="top">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">NV</span> Noé Vilanculos</a
+        >
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a class="active" href="index.html">Início</a
+          ><a href="about.html">Currículo</a
+          ><a href="portfolio.html">Projetos</a
+          ><a href="hobbies.html">Interesses</a
+          ><a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Beira, Moçambique · Informática & Design</p>
+            <h1>
+              Ideias reais. <span class="accent">Soluções digitais.</span>
+            </h1>
+            <p class="hero-copy">
+              Sou Noé Samuel Vilanculos, estudante de Informática e designer
+              gráfico. Transformo problemas em experiências digitais claras,
+              funcionais e pensadas para o contexto moçambicano.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="portfolio.html"
+                >Ver projetos <span aria-hidden="true">↗</span></a
+              ><a class="button ghost" href="contact.html">Vamos conversar</a>
+            </div>
           </div>
-        </div>
-        <div class="hero__retrato">
-          <figure>
-            <img src="assets/img/minha-foto.png" alt="Retrato deNoé Samuel Vilanculos" width="480" height="480" />
+          <figure class="portrait">
+            <img
+              src="assets/img/noe-vilanculos.png"
+              width="1152"
+              height="1536"
+              alt="Retrato a preto e branco de Noé Samuel Vilanculos"
+            />
+            <figcaption hidden>Retrato de Noé Samuel Vilanculos.</figcaption>
           </figure>
         </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section-head">
+            <div>
+              <p class="eyebrow">Perfil</p>
+              <h2>Tecnologia com propósito.</h2>
+            </div>
+            <p>
+              Programação, design e pensamento de produto reunidos para criar
+              soluções úteis e acessíveis.
+            </p>
+          </header>
+          <div class="cards">
+            <article class="card">
+              <p class="number">01 / SOFTWARE</p>
+              <h3>Construção com lógica</h3>
+              <p>
+                Aplicações web e desktop, sistemas de informação, algoritmos e
+                organização modular.
+              </p>
+            </article>
+            <article class="card">
+              <p class="number">02 / DESIGN</p>
+              <h3>Clareza visual</h3>
+              <p>
+                Identidade, tipografia e comunicação visual com atenção à
+                experiência de quem utiliza.
+              </p>
+            </article>
+            <article class="card">
+              <p class="number">03 / IMPACTO</p>
+              <h3>Olhar local</h3>
+              <p>
+                Interesse por educação, empregabilidade e transformação digital
+                em Moçambique.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section dark">
+        <div class="container">
+          <p class="quote">
+            A tecnologia ganha valor quando compreende as pessoas e o contexto
+            que pretende servir.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">NV</span> Noé Vilanculos</a
+          >
+          <p>Desenvolvido por Noé Samuel Vilanculos.</p>
+        </div>
+        <div>
+          <p>
+            <a href="mailto:noevilanculos100@gmail.com"
+              >noevilanculos100@gmail.com</a
+            >
+            · 847 220 016
+          </p>
+          <p>
+            <a href="https://github.com/noevilanculos-code">GitHub</a> ·
+            <a
+              href="https://linkedin.com/in/no%C3%A9-samuel-vilanculos-046a79372"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
       </div>
-    </section>
-  
-    <div class="faixa-competencias">
-      <p class="faixa-competencias__rotulo">Tecnologias principais</p>
-      <ul>
-        <li>Java</li>
-        <li>C++</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML/CSS</li>
-        <li>JavaFX</li>
-        <li>Git</li>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-      </ul>
-    </div>
-
-  <section class="seccao envolvente">
-      <header class="seccao__cabecalho">
-        <span class="etiqueta">apresentação</span>
-        <h2>Tecnologia com propósito, pensada a partir do contexto local</h2>
-        <p>
-          O meu percurso combina Informática e Design Gráfico, o que me permite abordar cada projeto
-          tanto pela perspetiva técnica como pela perspetiva visual. Interesso-me especialmente por
-          soluções digitais adaptadas à realidade moçambicana — acessibilidade, conectividade limitada,
-          custo de dados e necessidades reais dos utilizadores.
-        </p>
-      </header>
-
-    <div class="midia-bloco">
-        <video controls preload="metadata" poster="assets/img/video-poster.jpg" width="960" height="540">
-          <source src="assets/video/apresentacao.mp4" type="video/mp4" />
-          O seu navegador não suporta a reprodução de vídeo. Pode
-          <a href="assets/video/apresentacao.mp4">descarregar o vídeo de apresentação</a> diretamente.
-        </video>
-        <p class="dica">Vídeo de apresentação pessoal.</p>
-      </div>
-    </section>
-
-  <section class="seccao envolvente seccao--compacta">
-      <header class="seccao__cabecalho">
-        <span class="etiqueta">explorar</span>
-        <h2>Para onde quer ir?</h2>
-      </header>
-
-      <div class="grelha-destaques">
-        <article class="painel cartao-destaque">
-          <h3>Currículo completo</h3>
-          <p>Formação académica, experiência profissional e competências técnicas detalhadas.</p>
-          <a href="about.html">Ver currículo →</a>
-        </article>
-
-        <article class="painel cartao-destaque">
-          <h3>Projetos em destaque</h3>
-          <p>SmartCity, ProLink e outros projetos académicos de desenvolvimento de software.</p>
-          <a href="portfolio.html">Ver portfólio →</a>
-        </article>
-
-        <article class="painel cartao-destaque">
-          <h3>Vamos construir algo</h3>
-          <p>Aberto a estágios, projetos freelance e colaborações em desenvolvimento de software e design.</p>
-          <a href="contact.html">Enviar mensagem →</a>
-        </article>
-
-        <article class="painel cartao-destaque">
-          <h3>Fora do código</h3>
-          <p>Interesses pessoais que também influenciam o meu trabalho.</p>
-          <a href="hobbies.html">Ver hobbies →</a>
-        </article>
-      </div>
-    </section>
-
-  </main>
-
-    <footer class="rodape">
-    <div class="rodape__interior">
-      <ul class="rodape__contactos">
-        <li><a href="mailto:noevilanculos100@gmail.com">noevilanculos100@gmail.com</a></li>
-        <li><a href="tel:+258847220016">847 220 016</a></li>
-        <li><a href="https://github.com/noevilanculos-code" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/noé-samuel-vilanculos-046a79372" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-      <p class="rodape__assinatura">Desenvolvido por Noé Samuel Vilanculos</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
