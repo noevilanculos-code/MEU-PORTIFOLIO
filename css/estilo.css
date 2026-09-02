@@ -1,1 +1,52 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+
+  --cor-fundo: #08111f;
+  --cor-fundo-alt: #0d1728;
+  --cor-superficie: #111d30;
+  --cor-superficie-alt: #16233a;
+  --cor-linha: #22324a;
+  --cor-texto: #f4f7fb;
+  --cor-texto-suave: #9aa8ba;
+  --cor-teal: #19c7b5;
+  --cor-teal-profundo: #1687a8;
+  --cor-coral: #ff6b5e;
+  --cor-dourado: #1687a8;
+  --cor-erro: #f2545b;
+
+  --fonte-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --fonte-corpo: "Inter", "Segoe UI", Arial, sans-serif;
+  --fonte-mono: "JetBrains Mono", "Courier New", monospace;
+
+  --tam-xs: 0.8rem;
+  --tam-sm: 0.95rem;
+  --tam-base: 1rem;
+  --tam-md: 1.25rem;
+  --tam-lg: 1.75rem;
+  --tam-xl: 2.5rem;
+  --tam-xxl: 3.75rem;
+
+  --esp-1: 0.5rem;
+  --esp-2: 1rem;
+  --esp-3: 1.5rem;
+  --esp-4: 2.5rem;
+  --esp-5: 4rem;
+  --esp-6: 6rem;
+
+  --largura-conteudo: 72rem;
+  --raio: 10px;
+  --raio-painel: 18px;
+  --altura-header: 4.5rem;
+}
