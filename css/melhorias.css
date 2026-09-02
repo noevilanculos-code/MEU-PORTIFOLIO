@@ -1,0 +1,132 @@
+.project-card figure {
+  background: #eaf2f8;
+}
+.project-card figure img {
+  object-fit: contain;
+  object-position: center;
+  background: #eaf2f8;
+  padding: 0.35rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+.project-card > div {
+  flex: 1;
+}
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.55rem;
+}
+.status {
+  padding: 0.28rem 0.48rem;
+  border-radius: 99px;
+  color: #08745a;
+  background: #dcf8ee;
+  font:
+    500 0.64rem "DM Mono",
+    monospace;
+  white-space: nowrap;
+}
+.status.building {
+  color: #7a4a00;
+  background: #fff3c2;
+}
+.project-features {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  color: #4d667b;
+  font-size: 0.79rem;
+}
+.project-features li + li {
+  margin-top: 0.25rem;
+}
+.hobby {
+  overflow: hidden;
+  padding: 0 1.4rem 1.4rem;
+}
+.hobby img {
+  width: calc(100% + 2.8rem);
+  margin: 0 -1.4rem 1.15rem;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.hobby p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.hobby small {
+  display: block;
+  color: var(--blue);
+  margin-top: 0.85rem;
+  font:
+    500 0.68rem "DM Mono",
+    monospace;
+}
+.video-frame {
+  width: 100%;
+  min-height: 17rem;
+  border: 0;
+  border-radius: 0.8rem;
+  background: #071525;
+}
+
+/* Os cartões não devem herdar a altura do cartão mais alto na mesma linha. */
+.project-grid {
+  align-items: start;
+}
+.project-card {
+  display: block;
+}
+.project-card > div {
+  flex: initial;
+}
+.project-card figure img {
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+  padding: 0;
+}
+.project-card > div {
+  padding: 1rem;
+}
+.project-card h3 {
+  margin: 0.1rem 0 0.35rem;
+}
+.project-card p {
+  margin: 0.2rem 0;
+}
+.project-features {
+  margin: 0.55rem 0 0;
+}
+
+/* Portfólio horizontal: capa e informação lado a lado, sem cartões altos. */
+@media (min-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-card {
+    display: grid;
+    grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.15fr);
+    align-items: stretch;
+  }
+  .project-card figure {
+    height: 100%;
+  }
+  .project-card figure img {
+    width: 100%;
+    height: 100%;
+    min-height: 13.5rem;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .project-card figcaption {
+    display: none;
+  }
+  .project-card > div {
+    padding: 1.25rem 1.4rem;
+  }
+}
