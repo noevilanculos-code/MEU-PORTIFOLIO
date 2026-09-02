@@ -1,1 +1,172 @@
-
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contacte Noé Samuel Vilanculos." />
+    <title>Contacto | Noé Vilanculos</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">NV</span> Noé Vilanculos</a
+        >
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html">Início</a><a href="about.html">Currículo</a
+          ><a href="portfolio.html">Projetos</a
+          ><a href="hobbies.html">Interesses</a
+          ><a class="active" href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container contact-grid">
+          <aside>
+            <p class="eyebrow">Contacto</p>
+            <h1>Vamos criar algo útil.</h1>
+            <p>
+              Disponível para conversar sobre projetos, design e tecnologia
+              aplicada a necessidades reais.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <strong>Email</strong
+                ><a href="mailto:noevilanculos100@gmail.com"
+                  >noevilanculos100@gmail.com</a
+                >
+              </li>
+              <li><strong>Telefone</strong>847 220 016 · 871 046 765</li>
+              <li><strong>Localização</strong>Beira, Moçambique</li>
+            </ul>
+          </aside>
+          <form action="#enviado" method="get">
+            <fieldset>
+              <legend>Os seus dados</legend>
+              <label for="nome">Nome completo</label
+              ><input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                minlength="3"
+                maxlength="80"
+                placeholder="O seu nome"
+              /><label for="email">Email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="nome@exemplo.com"
+              /><label for="telefone">Telefone</label
+              ><input
+                id="telefone"
+                name="telefone"
+                type="tel"
+                required
+                pattern="[0-9+ ]{9,16}"
+                placeholder="+258 84 000 0000"
+              /><label for="data">Data preferida</label
+              ><input id="data" name="data" type="date" />
+            </fieldset>
+            <fieldset>
+              <legend>Sobre o pedido</legend>
+              <label for="assunto">Assunto</label
+              ><select id="assunto" name="assunto" required>
+                <option value="">Selecione uma opção</option>
+                <option>Projeto web</option>
+                <option>Design gráfico</option>
+                <option>Colaboração</option>
+                <option>Outro</option></select
+              ><label for="orcamento">Orçamento estimado (MZN)</label
+              ><input
+                id="orcamento"
+                name="orcamento"
+                type="number"
+                min="0"
+                max="10000000"
+                step="500"
+              />
+              <p class="eyebrow subeyebrow">Preferência de contacto</p>
+              <div class="choice">
+                <input
+                  id="email-pref"
+                  name="preferencia"
+                  type="radio"
+                  value="email"
+                  required
+                /><label for="email-pref">Email</label>
+              </div>
+              <div class="choice">
+                <input
+                  id="tel-pref"
+                  name="preferencia"
+                  type="radio"
+                  value="telefone"
+                /><label for="tel-pref">Telefone</label>
+              </div>
+              <label for="ficheiro">Anexar documento (opcional)</label
+              ><input
+                id="ficheiro"
+                name="ficheiro"
+                type="file"
+                accept=".pdf,.doc,.docx"
+              /><label for="mensagem">Mensagem</label
+              ><textarea
+                id="mensagem"
+                name="mensagem"
+                required
+                minlength="20"
+                maxlength="1500"
+                placeholder="Conte-me sobre a ideia..."
+              ></textarea>
+              <div class="choice">
+                <input
+                  id="consentimento"
+                  name="consentimento"
+                  type="checkbox"
+                  required
+                /><label for="consentimento"
+                  >Autorizo o contacto sobre este pedido.</label
+                >
+              </div>
+            </fieldset>
+            <button class="button primary" type="submit">
+              Enviar mensagem
+            </button>
+            <p id="enviado" class="notice" hidden>Mensagem preparada.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">NV</span> Noé Vilanculos</a
+          >
+          <p>Desenvolvido por Noé Samuel Vilanculos.</p>
+        </div>
+        <div>
+          <p>
+            <a href="mailto:noevilanculos100@gmail.com"
+              >noevilanculos100@gmail.com</a
+            >
+            · 847 220 016
+          </p>
+          <p>
+            <a href="https://github.com/noevilanculos-code">GitHub</a> ·
+            <a
+              href="https://linkedin.com/in/no%C3%A9-samuel-vilanculos-046a79372"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
