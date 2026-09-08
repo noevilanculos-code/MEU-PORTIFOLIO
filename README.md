@@ -7,3 +7,7 @@ Site de currículo e portfólio construído exclusivamente com HTML5 e CSS3, sem
 - `portfolio.html`: grelha CSS Grid com projetos selecionados e espaço de demonstração em vídeo.
 - `hobbies.html`: interesses organizados com Flexbox e reprodutor de áudio.
 - `contact.html`: formulário com validação HTML5 nativa.
+
+## Escolhas técnicas
+- HTML semântico: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure` e `figcaption` estruturam o conteúdo.
+- CSS Grid organiza os cartões de projetos; Flexbox organiza a navegação e os interesses.
