@@ -11,3 +11,8 @@ Site de currículo e portfólio construído exclusivamente com HTML5 e CSS3, sem
 ## Escolhas técnicas
 - HTML semântico: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure` e `figcaption` estruturam o conteúdo.
 - CSS Grid organiza os cartões de projetos; Flexbox organiza a navegação e os interesses.
+- HTML semântico: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure` e `figcaption` estruturam o conteúdo.
+- CSS Grid organiza os cartões de projetos; Flexbox organiza a navegação e os interesses.
+- Variáveis CSS, gradientes, sombras, transições e uma animação discreta criam uma identidade visual consistente.
+- O cabeçalho usa `position: sticky`; as media queries em `css/responsivo.css` adaptam o conteúdo a telemóveis e ecrãs maiores.
+- O formulário utiliza `required`, `minlength`, `pattern`, `min`, `max`, `accept` e tipos HTML5 para validação sem JavaScript.
