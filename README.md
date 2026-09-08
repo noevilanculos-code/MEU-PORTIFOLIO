@@ -16,3 +16,6 @@ Site de currículo e portfólio construído exclusivamente com HTML5 e CSS3, sem
 - Variáveis CSS, gradientes, sombras, transições e uma animação discreta criam uma identidade visual consistente.
 - O cabeçalho usa `position: sticky`; as media queries em `css/responsivo.css` adaptam o conteúdo a telemóveis e ecrãs maiores.
 - O formulário utiliza `required`, `minlength`, `pattern`, `min`, `max`, `accept` e tipos HTML5 para validação sem JavaScript.
+
+## Multimédia
+As áreas de áudio e vídeo já estão preparadas com as tags HTML5 e fontes configuradas.
